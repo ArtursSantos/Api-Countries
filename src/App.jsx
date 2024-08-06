@@ -1,15 +1,16 @@
 import * as React from "react";
-import { styled } from "@mui/material";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import NavBar from "./components/NavBar";
 import CardPais from "./components/CardPais";
+import Grid from "@mui/material/Grid";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <CardPais />
+        <NavBar />
+      <Grid container justifyContent="center" sx={{marginTop:"70px", bgcolor:"#FAFAFA"}}>
+        <CardPais />
+      </Grid>
+      
     </>
   );
 }
